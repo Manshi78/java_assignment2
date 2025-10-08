@@ -1,12 +1,6 @@
-/ File: CalculatorApp.java
 import java.util.Scanner;
 
-// -------------------------
-// Calculator Class
-// -------------------------
 class Calculator {
-
-    // Method Overloading for Addition
     public int add(int a, int b) {
         return a + b;
     }
@@ -18,18 +12,14 @@ class Calculator {
     public int add(int a, int b, int c) {
         return a + b + c;
     }
-
-    // Subtraction
     public int subtract(int a, int b) {
         return a - b;
     }
 
-    // Multiplication
     public double multiply(double a, double b) {
         return a * b;
     }
 
-    // Division (with exception handling)
     public double divide(int a, int b) {
         try {
             if (b == 0) {
@@ -42,10 +32,6 @@ class Calculator {
         }
     }
 }
-
-// -------------------------
-// User Interface Class
-// -------------------------
 class UserInterface {
     private Scanner sc = new Scanner(System.in);
     private Calculator calc = new Calculator();
@@ -148,10 +134,6 @@ class UserInterface {
         } while (choice != 5);
     }
 }
-
-// -------------------------
-// Main Class
-// -------------------------
 public class CalculatorApp {
     public static void main(String[] args) {
         UserInterface ui = new UserInterface();
